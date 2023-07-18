@@ -5,9 +5,7 @@ import java.awt.*;
 
 public class Window extends Canvas {
 
-	/**
-	 * Metin Durmuþ Tarafýndan yapýlmýþtýr.
-	 */
+
 	private static final long serialVersionUID = 1L;
 
 	public Window(int width, int height, String title, Game game) {

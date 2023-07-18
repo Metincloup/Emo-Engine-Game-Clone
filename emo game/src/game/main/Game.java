@@ -3,6 +3,7 @@ package game.main;
 import java.awt.Canvas;
 import java.awt.Color;
 import java.awt.Graphics;
+import java.awt.Toolkit;
 import java.awt.image.BufferStrategy;
 import java.util.Random;
 
@@ -85,7 +86,7 @@ public class Game extends Canvas {
 				hud.setfps(frames);
 				frames = 0;
 				if (gameState == Game.STATE.Game) {
-					hud.arttýr();
+					hud.arttir();
 					sayac++;
 					if (sayac == 3) {
 						menu.createEnemy();
@@ -111,6 +112,9 @@ public class Game extends Canvas {
 	}
 
 	private void render() {
+		if(System.getProperty("os.name").contains("nux") || System.getProperty("os.name").contains("nix")) {
+		Toolkit.getDefaultToolkit().sync();
+		}
 		BufferStrategy bs = this.getBufferStrategy();
 		if (bs == null) {
 			this.createBufferStrategy(3);

@@ -157,13 +157,13 @@ public class Menu extends MouseAdapter {
 			g2d.drawString("Emo Game", 180, 70);
 
 			g.setFont(fnt2);
-			g.drawString("Baþla", 270, 190);
+			g.drawString("Basla", 270, 190);
 			g.drawRect(210, 150, 200, 64);
 
-			g.drawString("Yardým", 267, 290);
+			g.drawString("Yardim", 267, 290);
 			g.drawRect(210, 250, 200, 64);
 
-			g.drawString("Çýkýþ", 270, 390);
+			g.drawString("cikis", 270, 390);
 			g.drawRect(210, 350, 200, 64);
 
 		} else if (Game.gameState == Game.STATE.Help) {
@@ -177,14 +177,14 @@ public class Menu extends MouseAdapter {
 
 			g.setColor(Color.white);
 			g2d.setPaint(gradient);
-			g.drawString("Nasýl Oynanýr", 140, 70);
+			g.drawString("Nasil Oynanir", 140, 70);
 
 			g.setFont(fnt3);
-			g.drawString("A S D W tusþlarýný kullanarak tntlerden kaç her 3 saniyede", 50, 150);
-			g.drawString("bir yeni tntler oluþur tntlere deðidiðinde kaybedersin.", 50, 180);
+			g.drawString("A S D W tuslarini kullanarak tntlerden kac her 3 saniyede", 50, 150);
+			g.drawString("bir yeni tntler olusur tntlere degidiginde kaybedersin.", 50, 180);
 
-			g.drawString("Oyun Yapýmcýsý: METÝN DURMUÞ", 50, 270);
-			g.drawString("Emolingo için yapýlmýþtýr.", 50, 310);
+			g.drawString("Oyun Yapimcisi: METIN DURMUS", 50, 270);
+			g.drawString("Emolingo icin yapilmistir.", 50, 310);
 
 			g.setColor(Color.black);
 			g.fillRect(210, 350, 200, 64);
@@ -192,7 +192,7 @@ public class Menu extends MouseAdapter {
 			g.setColor(Color.white);
 			g.setFont(fnt2);
 			g2d.setPaint(gradient);
-			g.drawString("Menüye dön", 225, 390);
+			g.drawString("Menï¿½ye dï¿½n", 225, 390);
 			g.drawRect(210, 350, 200, 64);
 		} else if (Game.gameState == Game.STATE.End) {
 			Font fnt = new Font("arial", 1, 50);

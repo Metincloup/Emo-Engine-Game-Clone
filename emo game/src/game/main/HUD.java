@@ -24,7 +24,7 @@ public class HUD {
 	public void tick() {
 	}
 
-	public void arttýr() {
+	public void arttir() {
 		setScore(getScore() + 1);
 	}
 
